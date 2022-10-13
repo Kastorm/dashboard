@@ -13,7 +13,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    {{ __('Страница Home') }}
+                    {{ __('Страница Home !!!') }}
 
                 </div>
             </div>
