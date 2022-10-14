@@ -98,7 +98,7 @@
                     <div class="block block-bordered block-rounded">
 
                         <div class="block-content border-bottom">
-                            555555555555555555
+                            111111111111111111
                         </div>
 
                     </div>
@@ -107,7 +107,7 @@
                     <div class="block block-bordered block-rounded">
 
                         <div class="block-content border-bottom">
-                           55555555555555555555555555
+                           1111111111111111111111111
                         </div>
 
                     </div>
