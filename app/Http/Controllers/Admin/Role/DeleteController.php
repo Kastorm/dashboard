@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Http\Controllers\Admin\Role;
+use App\Http\Requests\Admin\Role\UpdateRequest;
+use App\Models\Role;
+use App\Models\User;
+use Illuminate\Http\Response;
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+class DeleteController extends Controller
+{
+    /**
+     * Handle the incoming request.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function __invoke (Role $role)
+    {
+
+    $role->delete();
+        return redirect()->route('role.index', compact('role')) ;
+    }
+}

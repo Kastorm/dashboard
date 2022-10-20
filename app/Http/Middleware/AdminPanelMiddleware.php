@@ -2,6 +2,7 @@
 
 namespace App\Http\Middleware;
 
+use App\Models\User;
 use Closure;
 use Illuminate\Http\Request;
 
@@ -17,7 +18,7 @@ class AdminPanelMiddleware
     public function handle(Request $request, Closure $next)
     {
 
-        if (auth()->user()->role_id !='1')
+        if (auth()->user()->role_id != '1')
         {
             //return redirect()->route('home');
             abort('404');

@@ -98,7 +98,7 @@
                     <div class="block block-bordered block-rounded">
 
                         <div class="block-content border-bottom">
-                            111111111111111111
+                            Админ Панель Главная
                         </div>
 
                     </div>
@@ -107,7 +107,7 @@
                     <div class="block block-bordered block-rounded">
 
                         <div class="block-content border-bottom">
-                           1111111111111111111111111
+                          55555555555555555555
                         </div>
 
                     </div>

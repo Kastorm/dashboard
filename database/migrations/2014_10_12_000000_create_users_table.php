@@ -17,15 +17,19 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
+            $table->string('phone', 15)->nullable();
             $table->unsignedBigInteger('role_id')->nullable();
             $table->unsignedBigInteger('entity_id')->nullable();
+            $table->text('description')->nullable();
+            $table->string('password');
+            $table->boolean('status')->default(false);
+            $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
             $table->index('role_id','user_role_idx');
             $table->foreign('role_id','user_role_fk')->references('id')->on('roles');
             $table->foreign('entity_id','user_entity_fk')->references('id')->on('entities');
             $table->timestamps();
+            $table->softDeletes();
 
         });
     }
@@ -37,6 +41,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('user');
     }
 };
