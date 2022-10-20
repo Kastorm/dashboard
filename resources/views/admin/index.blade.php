@@ -95,23 +95,217 @@
             <div class="row">
                 <!-- Row #2 -->
                 <div class="col-md-12">
-                    <div class="block block-bordered block-rounded">
+                    <div class="block block-rounded">
+                        <div class="block-header block-header-default">
+                            <div class="block-options">
+                                <a class="like" href="{{route('user.create')}}">
+                                    <button type="button" class="btn btn-sm btn-primary">
+                                        <i class="fa fa-plus "></i>
 
-                        <div class="block-content border-bottom">
-                            Админ Панель Главная
+                                    </button>
+                                </a>
+
+                            </div>
+                            <h3 class="block-title">Журнал Заявок</h3>
                         </div>
+                        <div class="block-content">
+                            <table class="table table-sm table-vcenter">
+                                <thead>
+                                <tr>
+                                    <th class="text-center" style="width: 50px;"></th>
+                                    <th>Объект</th>
+                                    <th class="d-none d-sm-table-cell" style="width: 15%;">Статус</th>
+                                    <th>В работе </th>
+                                    <th>Коментарий</th>
 
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="block block-bordered block-rounded">
-
-                        <div class="block-content border-bottom">
-                          55555555555555555555
+                                    <th class="text-center" style="width: 100px;">Действие</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th class="text-center" scope="row">1</th>
+                                    <td>Детский сад 5</td>
+                                    <td class="d-none d-sm-table-cell">
+                                        <span class="badge bg-primary">Плановое ТО</span>
+                                    </td>
+                                    <td>Петров</td>
+                                    <td> проверка АПС 5 этаж</td>
+                                    <td class="text-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" aria-label="Edit">
+                                                <i class="fa fa-eye"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" aria-label="Edit">
+                                                <i class="fa fa-pencil-alt"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" aria-label="Delete">
+                                                <i class="fa fa-times"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-center" scope="row">2</th>
+                                    <td>Островиятанова 1</td>
+                                    <td class="d-none d-sm-table-cell">
+                                        <span class="badge bg-danger">Авария</span>
+                                    </td>
+                                    <td>Петров</td>
+                                    <td> 2 этаж кабинет 201</td>
+                                    <td class="text-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" aria-label="Edit">
+                                                <i class="fa fa-eye"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" aria-label="Edit">
+                                                <i class="fa fa-pencil-alt"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" aria-label="Delete">
+                                                <i class="fa fa-times"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-center" scope="row">3</th>
+                                    <td>Ленина 22</td>
+                                    <td class="d-none d-sm-table-cell">
+                                        <span class="badge bg-success">Заявка</span>
+                                    </td>
+                                    <td></td>
+                                    <td>Сработка 14 этаж</td>
+                                    <td class="text-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" aria-label="Edit">
+                                                <i class="fa fa-eye"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" aria-label="Edit">
+                                                <i class="fa fa-pencil-alt"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" aria-label="Delete">
+                                                <i class="fa fa-times"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-center" scope="row">4</th>
+                                    <td>Пирогова 22</td>
+                                    <td class="d-none d-sm-table-cell">
+                                        <span class="badge bg-info">Работы ТО</span>
+                                    </td>
+                                    <td>Симовнов М.В.</td>
+                                    <td>Перетядка кабеля 14 этаж</td>
+                                    <td class="text-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" aria-label="Edit">
+                                                <i class="fa fa-eye"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" aria-label="Edit">
+                                                <i class="fa fa-pencil-alt"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" aria-label="Delete">
+                                                <i class="fa fa-times"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-center" scope="row">5</th>
+                                    <td>Школа 55</td>
+                                    <td class="d-none d-sm-table-cell">
+                                        <span class="badge bg-success">Заявка</span>
+                                    </td>
+                                    <td>Симовнов М.В.</td>
+                                    <td>сработка 14 этаж</td>
+                                    <td class="text-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" aria-label="Edit">
+                                                <i class="fa fa-eye"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" aria-label="Edit">
+                                                <i class="fa fa-pencil-alt"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" aria-label="Delete">
+                                                <i class="fa fa-times"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-center" scope="row">6</th>
+                                    <td>Пирогова 22 </td>
+                                    <td class="d-none d-sm-table-cell">
+                                        <span class="badge bg-warning">Архив</span>
+                                    </td>
+                                    <td>Симовнов М.В.</td>
+                                    <td>сработка 14 этаж</td>
+                                    <td class="text-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" aria-label="Edit">
+                                                <i class="fa fa-eye"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" aria-label="Edit">
+                                                <i class="fa fa-pencil-alt"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" aria-label="Delete">
+                                                <i class="fa fa-times"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-center" scope="row">7</th>
+                                    <td>Линина22</td>
+                                    <td class="d-none d-sm-table-cell">
+                                        <span class="badge bg-warning">Архив</span>
+                                    </td>
+                                    <td>Симовнов М.В.</td>
+                                    <td>сработка 14 этаж</td>
+                                    <td class="text-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" aria-label="Edit">
+                                                <i class="fa fa-eye"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" aria-label="Edit">
+                                                <i class="fa fa-pencil-alt"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" aria-label="Delete">
+                                                <i class="fa fa-times"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-center" scope="row">8</th>
+                                    <td>Волгина 34</td>
+                                    <td class="d-none d-sm-table-cell">
+                                        <span class="badge bg-success">Заявка</span>
+                                    </td>
+                                    <td></td>
+                                    <td>сработка</td>
+                                    <td class="text-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" aria-label="Edit">
+                                                <i class="fa fa-eye"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" aria-label="Edit">
+                                                <i class="fa fa-pencil-alt"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-sm btn-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" aria-label="Delete">
+                                                <i class="fa fa-times"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
-
                     </div>
+
+
                 </div>
+
                 <!-- END Row #2 -->
             </div>
 

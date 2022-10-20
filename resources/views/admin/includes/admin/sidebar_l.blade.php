@@ -32,48 +32,8 @@
                             <span class="nav-main-link-name">Admin Panel</span>
                         </a>
                     </li>
-                    <li class="nav-main-heading">Управление</li>
                     <li class="nav-main-item">
-                        <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true" aria-expanded="false" href="#">
-                            <i class="nav-main-link-icon fa fa-briefcase"></i>
-                            <span class="nav-main-link-name">Пользователи</span>
-                            <span class="badge badge-info right">{{$user_count}}</span>
-
-                        </a>
-                        <ul class="nav-main-submenu">
-                            <li class="nav-main-item">
-                                <a class="nav-main-link" href="">
-                                    <span class="nav-main-link-name">Показать</span>
-                                </a>
-                            </li>
-                            <li class="nav-main-item">
-                                <a class="nav-main-link" href="{{route('role')}}">
-                                    <span class="nav-main-link-name">Новый</span>
-                                </a>
-                            </li>
-
-                            <li class="nav-main-item">
-                                <a class="nav-main-link" href="{{route('role')}}">
-                                    <span class="nav-main-link-name">Роли</span>
-                                </a>
-                            </li>
-
-                        </ul>
-                    </li>
-                    <li class="nav-main-item">
-                        <a class="nav-main-link" href="">
-                            <i class="nav-main-link-icon fa fa-file-invoice-dollar"></i>
-                            <span class="nav-main-link-name">Заказчики</span>
-                        </a>
-                    </li>
-                    <li class="nav-main-item">
-                        <a class="nav-main-link" href="">
-                            <i class="nav-main-link-icon fa fa-users"></i>
-                            <span class="nav-main-link-name">Подрядчики</span>
-                        </a>
-                    </li>
-                    <li class="nav-main-item">
-                        <a class="nav-main-link" href="">
+                        <a class="nav-main-link" href="{{route('admin')}}">
                             <i class="nav-main-link-icon fa fa-wallet"></i>
                             <span class="nav-main-link-name">Заявки</span>
                         </a>
@@ -84,6 +44,40 @@
                             <span class="nav-main-link-name">Журналы</span>
                         </a>
                     </li>
+                    <li class="nav-main-heading">Управление</li>
+                    <li class="nav-main-item">
+                        <a class="nav-main-link" href="{{route('user.index')}}">
+                            <i class="nav-main-link-icon fa fa-briefcase"></i>
+                            <span class="nav-main-link-name">Пользователи</span>
+                            <span class="badge badge-info right">{{$user_count}}</span>
+                        </a>
+                    </li>
+                    <li class="nav-main-item">
+
+                        <a class="nav-main-link" href="{{route('role.index')}}">
+                            <i class="nav-main-link-icon fa fa-file-invoice-dollar"></i>
+                            <span class="nav-main-link-name">Права</span>
+                        </a>
+                    </li>
+                    <li class="nav-main-item">
+                        <a class="nav-main-link" href="">
+                            <i class="nav-main-link-icon fa fa-file-invoice-dollar"></i>
+                            <span class="nav-main-link-name">Заказчики</span>
+                        </a>
+                    </li>
+                    <li class="nav-main-item">
+                        <a class="nav-main-link" href="">
+                            <i class="nav-main-link-icon fa fa-file-invoice-dollar"></i>
+                            <span class="nav-main-link-name">Объекты</span>
+                        </a>
+                    </li>
+                    <li class="nav-main-item">
+                        <a class="nav-main-link" href="">
+                            <i class="nav-main-link-icon fa fa-users"></i>
+                            <span class="nav-main-link-name">Подрядчики</span>
+                        </a>
+                    </li>
+
                     <li class="nav-main-heading">Настройки</li>
                     <li class="nav-main-item">
                         <a class="nav-main-link" href="">

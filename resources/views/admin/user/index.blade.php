@@ -8,13 +8,13 @@
                 <div class="col-md-12">
                     <div class="block block-rounded">
                         <div class="block-header block-header-default">
-                            <div class="block-options">
-                                <a class="like" href="{{route('user.create')}}">
+                              <div class="block-options">
+                                 <a class="like" href="{{route('user.create')}}">
                                   <button type="button" class="btn btn-sm btn-primary">
                                     <i class="fa fa-plus "></i>
                                    </button>
-                                 </a>
-                            </div>
+                                  </a>
+                                </div>
                            </div>
                         <div class="block block-rounded">
                             <div class="block-content">
