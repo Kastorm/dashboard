@@ -106,7 +106,7 @@
                                 </a>
 
                             </div>
-                            <h3 class="block-title">Журнал Заявок</h3>
+
                         </div>
                         <div class="block-content">
                             <table class="table table-sm table-vcenter">
@@ -115,9 +115,8 @@
                                     <th class="text-center" style="width: 50px;"></th>
                                     <th>Объект</th>
                                     <th class="d-none d-sm-table-cell" style="width: 15%;">Статус</th>
-                                    <th>В работе </th>
-                                    <th>Коментарий</th>
-
+                                    <th>Ответсвенный</th>
+                                    <th>Тема</th>
                                     <th class="text-center" style="width: 100px;">Действие</th>
                                 </tr>
                                 </thead>
@@ -236,7 +235,8 @@
                                     <th class="text-center" scope="row">6</th>
                                     <td>Пирогова 22 </td>
                                     <td class="d-none d-sm-table-cell">
-                                        <span class="badge bg-warning">Архив</span>
+                                        <span class="badge bg-gray">Закрыто</span>
+
                                     </td>
                                     <td>Симовнов М.В.</td>
                                     <td>сработка 14 этаж</td>
@@ -258,7 +258,7 @@
                                     <th class="text-center" scope="row">7</th>
                                     <td>Линина22</td>
                                     <td class="d-none d-sm-table-cell">
-                                        <span class="badge bg-warning">Архив</span>
+                                        <span class="badge bg-gray">Архив</span>
                                     </td>
                                     <td>Симовнов М.В.</td>
                                     <td>сработка 14 этаж</td>
@@ -276,28 +276,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <th class="text-center" scope="row">8</th>
-                                    <td>Волгина 34</td>
-                                    <td class="d-none d-sm-table-cell">
-                                        <span class="badge bg-success">Заявка</span>
-                                    </td>
-                                    <td></td>
-                                    <td>сработка</td>
-                                    <td class="text-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" aria-label="Edit">
-                                                <i class="fa fa-eye"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-sm btn-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" aria-label="Edit">
-                                                <i class="fa fa-pencil-alt"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-sm btn-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" aria-label="Delete">
-                                                <i class="fa fa-times"></i>
-                                            </button>
-                                        </div>
-                                    </td>
-                                </tr>
+
                                 </tbody>
                             </table>
                         </div>
