@@ -115,8 +115,9 @@
                                     <th class="text-center" style="width: 50px;"></th>
                                     <th>Объект</th>
                                     <th class="d-none d-sm-table-cell" style="width: 15%;">Статус</th>
-                                    <th>Ответсвенный</th>
+                                    <th>Исполнитель</th>
                                     <th>Тема</th>
+                                    <th>Подрядчик</th>
                                     <th class="text-center" style="width: 100px;">Действие</th>
                                 </tr>
                                 </thead>
@@ -125,10 +126,11 @@
                                     <th class="text-center" scope="row">1</th>
                                     <td>Детский сад 5</td>
                                     <td class="d-none d-sm-table-cell">
-                                        <span class="badge bg-primary">Плановое ТО</span>
+                                        <span class="badge bg-primary " style="width: 90px;">Плановое ТО</span>
                                     </td>
                                     <td>Петров</td>
                                     <td> проверка АПС 5 этаж</td>
+                                    <td> ООО Ромашка</td>
                                     <td class="text-center">
                                         <div class="btn-group">
                                             <button type="button" class="btn btn-sm btn-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" aria-label="Edit">
@@ -147,10 +149,11 @@
                                     <th class="text-center" scope="row">2</th>
                                     <td>Островиятанова 1</td>
                                     <td class="d-none d-sm-table-cell">
-                                        <span class="badge bg-danger">Авария</span>
+                                        <span class="badge bg-danger" style="width: 90px;">Авария</span>
                                     </td>
                                     <td>Петров</td>
                                     <td> 2 этаж кабинет 201</td>
+                                    <td> ООО Ромашка</td>
                                     <td class="text-center">
                                         <div class="btn-group">
                                             <button type="button" class="btn btn-sm btn-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" aria-label="Edit">
@@ -169,10 +172,11 @@
                                     <th class="text-center" scope="row">3</th>
                                     <td>Ленина 22</td>
                                     <td class="d-none d-sm-table-cell">
-                                        <span class="badge bg-success">Заявка</span>
+                                        <span class="badge bg-success" style="width: 90px;">Заявка</span>
                                     </td>
                                     <td></td>
                                     <td>Сработка 14 этаж</td>
+                                    <td> ООО Ромашка</td>
                                     <td class="text-center">
                                         <div class="btn-group">
                                             <button type="button" class="btn btn-sm btn-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" aria-label="Edit">
@@ -191,10 +195,11 @@
                                     <th class="text-center" scope="row">4</th>
                                     <td>Пирогова 22</td>
                                     <td class="d-none d-sm-table-cell">
-                                        <span class="badge bg-info">Работы ТО</span>
+                                        <span class="badge bg-info"style="width: 90px;">Работы ТО</span>
                                     </td>
                                     <td>Симовнов М.В.</td>
                                     <td>Перетядка кабеля 14 этаж</td>
+                                    <td> ООО Ромашка</td>
                                     <td class="text-center">
                                         <div class="btn-group">
                                             <button type="button" class="btn btn-sm btn-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" aria-label="Edit">
@@ -213,10 +218,11 @@
                                     <th class="text-center" scope="row">5</th>
                                     <td>Школа 55</td>
                                     <td class="d-none d-sm-table-cell">
-                                        <span class="badge bg-success">Заявка</span>
+                                        <span class="badge bg-success" style="width: 90px;">Заявка</span>
                                     </td>
                                     <td>Симовнов М.В.</td>
                                     <td>сработка 14 этаж</td>
+                                    <td> ООО Ромашка</td>
                                     <td class="text-center">
                                         <div class="btn-group">
                                             <button type="button" class="btn btn-sm btn-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" aria-label="Edit">
@@ -235,11 +241,12 @@
                                     <th class="text-center" scope="row">6</th>
                                     <td>Пирогова 22 </td>
                                     <td class="d-none d-sm-table-cell">
-                                        <span class="badge bg-gray">Закрыто</span>
+                                        <span class="badge bg-gray" style="width: 90px;">Закрыто</span>
 
                                     </td>
                                     <td>Симовнов М.В.</td>
                                     <td>сработка 14 этаж</td>
+                                    <td> ООО Ромашка</td>
                                     <td class="text-center">
                                         <div class="btn-group">
                                             <button type="button" class="btn btn-sm btn-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" aria-label="Edit">
@@ -258,10 +265,11 @@
                                     <th class="text-center" scope="row">7</th>
                                     <td>Линина22</td>
                                     <td class="d-none d-sm-table-cell">
-                                        <span class="badge bg-gray">Архив</span>
+                                        <span class="badge bg-gray" style="width: 90px;">Архив</span>
                                     </td>
                                     <td>Симовнов М.В.</td>
                                     <td>сработка 14 этаж</td>
+                                    <td> ООО Ромашка</td>
                                     <td class="text-center">
                                         <div class="btn-group">
                                             <button type="button" class="btn btn-sm btn-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" aria-label="Edit">
