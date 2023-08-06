@@ -1,7 +1,7 @@
 <?php
 
-namespace App\Http\Controllers\Admin\Role;
-use App\Models\Role;
+namespace App\Http\Controllers\Admin\Bot;
+use App\Models\Bot;
 use Illuminate\Http\Response;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -16,7 +16,7 @@ class IndexController extends Controller
      */
     public function __invoke (Request $request)
     {
-        $roles = Role::all();
-        return view('admin.role.index', compact('roles'));
+        $bot = Bot::all();
+        return view('admin.bot.index', compact('bot'));
     }
 }

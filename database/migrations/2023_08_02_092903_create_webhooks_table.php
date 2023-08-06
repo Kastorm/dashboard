@@ -15,12 +15,15 @@ return new class extends Migration
     {
         Schema::create('webhooks', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
-            $table->string('subaccount');
+            $table->string('bot');
+            $table->string('time_frame');
             $table->string('symbol');
             $table->string('side');
-            $table->string('desc');
+            $table->string('action');
             $table->string('bar');
+            $table->string('orderId');
+            $table->string('orderLinkId');
+            $table->timestamps();
         });
     }
 

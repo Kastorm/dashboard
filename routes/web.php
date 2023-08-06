@@ -29,6 +29,10 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 // Роуты по админке контролеры с одним действием
 Route::prefix('admin')->namespace('App\Http\Controllers\Admin')->middleware(['auth','admin'])->group(function () {
     Route::get('/', IndexController::class)->name('admin');
+      // Роуты по админке Bot
+       Route::prefix('bot')->namespace('Bot')->group(function () {
+       Route::get('/','IndexController')->name('bot.index');
+   });
     // Роуты по админке  Пользователи
     Route::prefix('user')->namespace('User')->group(function () {
         Route::get('/','IndexController')->name('user.index');

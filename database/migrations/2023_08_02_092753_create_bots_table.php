@@ -13,11 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('bot', function (Blueprint $table) {
+        Schema::create('bots', function (Blueprint $table) {
             $table->id();
             $table->string('name')->unique();
             $table->string('category')->default('linear');
             $table->boolean('status')->default(false);
+            $table->boolean('testnet')->default(false);
             $table->string('leverage')->default('25');
             $table->string('order_size');
             $table->string('order_tp');
@@ -25,9 +26,10 @@ return new class extends Migration
             $table->string('order_tsl');
             $table->string('order_activ_tsl');
             $table->string('balans_min');
-            $table->boolean('testnet')->default(false);
             $table->string('api_key')->nullable();
             $table->string('api_secret')->nullable();
+            $table->string('comments');
+            $table->string('exchange')->default('1');
             $table->timestamps();
             $table->softDeletes();
         });
@@ -40,6 +42,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('bot');
+        Schema::dropIfExists('bots');
     }
 };
