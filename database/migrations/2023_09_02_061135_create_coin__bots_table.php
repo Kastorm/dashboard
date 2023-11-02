@@ -13,11 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('entities', function (Blueprint $table) {
-            $table->id();
-            $table->string('entity')->nullable();
-            $table->timestamps();
-            $table->softDeletes();
+        Schema::create('coin__bots', function (Blueprint $table) {
+            $table->unsignedBigInteger('bot_id')->nullable();
+            $table->unsignedBigInteger('coin_id')->nullable();
+            $table->foreign('bot_id')->references('id')->on('bots');
+            $table->foreign('coin_id')->references('id')->on('coins');
         });
     }
 
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('entities');
+        Schema::dropIfExists('coin__bots');
     }
 };

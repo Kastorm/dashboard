@@ -15,15 +15,21 @@ return new class extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('bot_id')->nullable();
+            $table->unsignedBigInteger('webhook_id')->nullable();
             $table->string('time_frame');
+            $table->string('action');
             $table->string('symbol');
             $table->string('side');
-            $table->string('action');
-            $table->string('bar');
+            $table->string('size');
+            $table->string('avgPrice');
             $table->string('pnl');
             $table->string('orderId');
             $table->string('orderLinkId');
+            $table->foreign('bot_id')->references('id')->on('bots');
+            $table->foreign('webhook_id')->references('id')->on('webhooks');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

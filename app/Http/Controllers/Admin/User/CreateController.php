@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers\Admin\User;
-use App\Models\Entity;
 use App\Models\Role;
 use App\Models\User;
 use Illuminate\Http\Response;
@@ -19,7 +18,7 @@ class CreateController extends Controller
     public function __invoke (Request $request)
     {
            $roles=Role::all();
-        $entities=Entity::all();
-        return view('admin.user.create', compact('roles','entities'));
+
+        return view('admin.user.create', compact('roles'));
     }
 }

@@ -30,8 +30,10 @@ return new class extends Migration
             $table->string('api_secret')->nullable();
             $table->string('comments');
             $table->string('exchange')->default('1');
+            $table->unsignedBigInteger('user_id')->nullable();
             $table->timestamps();
             $table->softDeletes();
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 

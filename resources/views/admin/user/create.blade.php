@@ -67,7 +67,7 @@
                                     <div class="mb-4">
                                         <label class="form-label" for="example-select">Организация</label>
                                         <select class="form-select" id="example-select" name="entity_id">
-                                            @foreach($entities as $entity)
+                                            @foreach($entity)
                                                 <option value="{{$entity->id}}">{{$entity->entity}}</option>
                                             @endforeach
                                         </select>
