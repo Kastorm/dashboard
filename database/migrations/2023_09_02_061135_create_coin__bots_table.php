@@ -13,7 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('coin__bots', function (Blueprint $table) {
+        Schema::create('coin_bots', function (Blueprint $table) {
+            $table->id();
             $table->unsignedBigInteger('bot_id')->nullable();
             $table->unsignedBigInteger('coin_id')->nullable();
             $table->foreign('bot_id')->references('id')->on('bots');

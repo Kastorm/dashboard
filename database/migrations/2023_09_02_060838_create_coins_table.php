@@ -24,6 +24,7 @@ return new class extends Migration
             $table->string('deliveryTime');
             $table->string('deliveryFeeRate');
             $table->integer('priceScale');
+            $table->string('leverage')->default('10');
             $table->float('minLeverage');
             $table->float('maxLeverage');
             $table->float('leverageStep');

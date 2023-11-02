@@ -19,7 +19,6 @@ return new class extends Migration
             $table->string('category')->default('linear');
             $table->boolean('status')->default(false);
             $table->boolean('testnet')->default(false);
-            $table->string('leverage')->default('25');
             $table->string('order_size');
             $table->string('order_tp');
             $table->string('order_sl');

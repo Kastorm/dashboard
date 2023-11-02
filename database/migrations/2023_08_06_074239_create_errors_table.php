@@ -15,9 +15,9 @@ return new class extends Migration
     {
         Schema::create('errors', function (Blueprint $table) {
             $table->id();
-            $table->string('msg',20);
+            $table->string('bot_id',20);
             $table->string('msg',1000);
-            $table->string('data',500);
+            $table->string('data',1000);
             $table->timestamps();
         });
     }
